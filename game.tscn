@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://djj47essd72y7"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_otmi0"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_otmi0")
+
+[node name="ZombieArm" type="ColorRect" parent="."]
+offset_left = 605.0
+offset_top = 101.0
+offset_right = 655.0
+offset_bottom = 502.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+visible = false
+custom_minimum_size = Vector2(200, 5)
+offset_left = 338.0
+offset_top = 397.0
+offset_right = 378.0
+offset_bottom = 437.0
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 258.0
+offset_top = 525.0
+offset_right = 992.0
+offset_bottom = 600.0
+
+[node name="ReplayButton" type="Button" parent="."]
+offset_left = 483.0
+offset_top = 400.0
+offset_right = 583.0
+offset_bottom = 500.0
+metadata/_edit_use_anchors_ = true
