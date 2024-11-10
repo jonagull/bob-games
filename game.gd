@@ -3,24 +3,24 @@ extends Node2D
 @onready var progress_bar = $ProgressBar
 @onready var zombie_arm = $ZombieArm2
 @onready var replay_button = $ReplayButton
-@onready var start_button = $StartButton  # Adjust path if needed
-@onready var start_label = $StartLabel    # Adjust path if needed
-@onready var replay_label = $ReplayLabel    # Adjust path if needed
-@onready var loss_label = $LossLabel    # Adjust path if needed
+@onready var start_button = $StartButton  
+@onready var start_label = $StartLabel    
+@onready var replay_label = $ReplayLabel    
+@onready var loss_label = $LossLabel    
 
-var progress = 50  # Start at 50 so arm is upright
+var progress = 50  
 var increment = 5
 var max_progress = 100
-var decrease_rate = 10
+var decrease_rate = 30
 var game_won = false
-var game_started = false  # Track if the game has started
+var game_started = false  
 
 func _ready():
 	progress_bar.value = progress
-	progress_bar.visible = false  # Hide progress bar initially
+	progress_bar.visible = false  
 	zombie_arm.global_rotation_degrees = -90
-	zombie_arm.visible = false     # Hide the zombie arm initially
-	replay_button.visible = false  # Hide the replay button initially
+	zombie_arm.visible = false     
+	replay_button.visible = false  
 	replay_label.visible = false
 	loss_label.visible = false
 	start_button.connect("pressed", Callable(self, "_on_start_button_pressed"))
@@ -57,7 +57,8 @@ func decrease_progress(delta):
 
 func update_arm_tilt():
 	# Adjust the tilt range from -180 (west, losing) to 0 (upright) as progress changes
-	var tilt_angle = lerp(-180, 0, float(progress) / max_progress)
+	var tilt_angle = lerp(-90, 90, float(progress) / max_progress)
+	#var tilt_angle = lerp(-180, 0, float(progress) / max_progress)
 	zombie_arm.global_rotation_degrees = tilt_angle
 
 func on_victory():
