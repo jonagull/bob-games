@@ -1,34 +1,71 @@
-[gd_scene load_steps=2 format=3 uid="uid://djj47essd72y7"]
+[gd_scene load_steps=4 format=3 uid="uid://djj47essd72y7"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_otmi0"]
+[ext_resource type="Texture2D" uid="uid://igt4yp5awr0s" path="res://zombarm.png" id="2_635rt"]
+[ext_resource type="Texture2D" uid="uid://kvy6i7xax2pq" path="res://background_dystopian.webp" id="2_qw7b5"]
 
 [node name="Game" type="Node2D"]
+position = Vector2(354, 197)
 script = ExtResource("1_otmi0")
 
-[node name="ZombieArm" type="ColorRect" parent="."]
-offset_left = 605.0
-offset_top = 101.0
-offset_right = 655.0
-offset_bottom = 502.0
-metadata/_edit_use_anchors_ = true
+[node name="BackgroundDystopian" type="Sprite2D" parent="."]
+position = Vector2(208, 179)
+scale = Vector2(0.562381, 0.542857)
+texture = ExtResource("2_qw7b5")
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+[node name="ZombieArm" type="ColorRect" parent="."]
 visible = false
-custom_minimum_size = Vector2(200, 5)
-offset_left = 338.0
-offset_top = 397.0
-offset_right = 378.0
-offset_bottom = 437.0
+offset_left = 296.078
+offset_top = -127.451
+offset_right = 346.078
+offset_bottom = 273.549
+metadata/_edit_use_anchors_ = true
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = 258.0
-offset_top = 525.0
-offset_right = 992.0
-offset_bottom = 600.0
+offset_left = -180.392
+offset_top = 310.275
+offset_right = 553.608
+offset_bottom = 385.275
+metadata/_edit_use_anchors_ = true
 
 [node name="ReplayButton" type="Button" parent="."]
-offset_left = 483.0
-offset_top = 400.0
-offset_right = 583.0
-offset_bottom = 500.0
+offset_left = 44.6078
+offset_top = 185.275
+offset_right = 144.608
+offset_bottom = 285.275
 metadata/_edit_use_anchors_ = true
+
+[node name="ZombieArm2" type="Sprite2D" parent="."]
+position = Vector2(178, 228)
+rotation = -1.5708
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("2_635rt")
+offset = Vector2(588.83, 65.662)
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 44.0
+offset_top = 2.0
+offset_right = 144.0
+offset_bottom = 102.0
+metadata/_edit_use_anchors_ = true
+
+[node name="StartLabel" type="Label" parent="."]
+offset_left = 4.0
+offset_top = -162.0
+offset_right = 364.0
+offset_bottom = -49.0
+text = "Play me?"
+
+[node name="ReplayLabel" type="Label" parent="."]
+offset_left = -4.0
+offset_top = -109.0
+offset_right = 356.0
+offset_bottom = 4.0
+text = "Start over?"
+
+[node name="LossLabel" type="Label" parent="."]
+offset_left = 310.0
+offset_top = -117.0
+offset_right = 670.0
+offset_bottom = -4.0
+text = "AHAHAHAHA"
