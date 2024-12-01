@@ -1,19 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://djj47essd72y7"]
 
-[ext_resource type="Script" path="res://game.gd" id="1_otmi0"]
-[ext_resource type="Texture2D" uid="uid://kvy6i7xax2pq" path="res://background_dystopian.webp" id="2_qw7b5"]
-[ext_resource type="Texture2D" uid="uid://77sqh2ep766j" path="res://pxArt.png" id="3_vmhta"]
-[ext_resource type="Texture2D" uid="uid://5iwcd4x5ii21" path="res://playbutton.png" id="4_8rg2y"]
+[ext_resource type="Script" path="res://scenes/armbar/armbar.gd" id="1_1p6kb"]
+[ext_resource type="Texture2D" uid="uid://kvy6i7xax2pq" path="res://scenes/armbar/background_dystopian.webp" id="2_mtlox"]
+[ext_resource type="Texture2D" uid="uid://77sqh2ep766j" path="res://scenes/armbar/pxArt.png" id="3_td4aa"]
+[ext_resource type="Texture2D" uid="uid://5iwcd4x5ii21" path="res://scenes/armbar/playbutton.png" id="4_2knxt"]
 
-[node name="Game" type="Node2D"]
+[node name="Armbar" type="Node2D"]
 position = Vector2(354, 197)
-script = ExtResource("1_otmi0")
+script = ExtResource("1_1p6kb")
 
 [node name="BackgroundDystopian" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(208, 179)
 scale = Vector2(0.562381, 0.542857)
-texture = ExtResource("2_qw7b5")
+texture = ExtResource("2_mtlox")
 
 [node name="ZombieArm" type="ColorRect" parent="."]
 visible = false
@@ -40,15 +40,16 @@ metadata/_edit_use_anchors_ = true
 [node name="ZombieArm2" type="Sprite2D" parent="."]
 position = Vector2(178, 310)
 scale = Vector2(0.58, 0.58)
-texture = ExtResource("3_vmhta")
+texture = ExtResource("3_td4aa")
 offset = Vector2(-110.79, -323.285)
+flip_h = true
 
 [node name="StartButton" type="Button" parent="."]
 offset_left = -83.0
 offset_top = -19.0
 offset_right = 525.0
 offset_bottom = 289.0
-icon = ExtResource("4_8rg2y")
+icon = ExtResource("4_2knxt")
 metadata/_edit_use_anchors_ = true
 
 [node name="StartLabel" type="Label" parent="."]

@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="armbar"
-run/main_scene="res://game.tscn"
+run/main_scene="res://scenes/gunfight/gunfight.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://scenes/armbar/icon.svg"
 
 [editor_plugins]
 

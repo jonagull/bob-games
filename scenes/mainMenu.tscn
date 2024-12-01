@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0xdjscg5k6hu"]
+
+[ext_resource type="Script" path="res://scenes/mainMenu.gd" id="1_phlsg"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 123.0
+offset_right = 680.0
+offset_bottom = 146.0
+text = "Choose something"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 210.0
+offset_right = 591.073
+offset_bottom = 312.65
+scale = Vector2(2.26, 2.26)
+script = ExtResource("1_phlsg")
+
+[node name="Game1Button" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Play armbar game"
+
+[node name="Game2Button" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Play Armbar"
+
+[node name="QuitButton" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Quit"

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://igt4yp5awr0s"
-path="res://.godot/imported/zombarm.png-f27301d8a6bf99d54ff476e974b578f6.ctex"
+uid="uid://kvy6i7xax2pq"
+path="res://.godot/imported/background_dystopian.webp-83e0667d323627fdf9dc81a89d9c1703.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://zombarm.png"
-dest_files=["res://.godot/imported/zombarm.png-f27301d8a6bf99d54ff476e974b578f6.ctex"]
+source_file="res://scenes/armbar/background_dystopian.webp"
+dest_files=["res://.godot/imported/background_dystopian.webp-83e0667d323627fdf9dc81a89d9c1703.ctex"]
 
 [params]
 
